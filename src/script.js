@@ -16,8 +16,12 @@ const scene = new THREE.Scene();
 scene.add(new THREE.AxesHelper());
 
 //lights
-const light = new THREE.DirectionalLight();
-scene.add(light);
+const lightD1 = new THREE.DirectionalLight(0xaaeeff, 3);
+lightD1.position.set(-2, 2, 2);
+scene.add(lightD1);
+const lightD2 = new THREE.DirectionalLight(0xaaeeff, 0.5);
+lightD2.position.set(2, 2, -2);
+scene.add(lightD2);
 const lightA = new THREE.AmbientLight(0xffffff, 0.3);
 scene.add(lightA);
 
